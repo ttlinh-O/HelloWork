@@ -1,4 +1,4 @@
-name: Example Workflow with Manual Dispatch
+name: from test branch
 
 on:
   # Allows manual (dispatcher) triggering via GitHub UI
@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out the repository
         uses: actions/checkout@v3
 
       - name: Run your build commands
