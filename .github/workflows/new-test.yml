@@ -1,0 +1,17 @@
+name: Example Workflow with Manual Dispatch
+
+on:
+  # Allows manual (dispatcher) triggering via GitHub UI
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Run your build commands
+        run: |
+          echo "This workflow has been triggered manually!"
+          # Add any other build steps/commands here
